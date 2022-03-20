@@ -10,7 +10,10 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://news.ycombinator.com/*"],
+      "matches": [
+        "https://news.ycombinator.com/item*",
+        "https://news.ycombinator.com/user*"
+      ],
       "js": ["background.js"]
     }
   ],
